@@ -1,0 +1,2758 @@
+{
+    "name": "POC_test_1__2024-07-18--13-32-05-549822",
+    "cmd.replication_definition": {
+        "tasks": [
+            {
+                "task": {
+                    "name": "POC_test_all_pk",
+                    "source_name": "Oracle",
+                    "target_names": [
+                        "Snowflake_AWS"
+                    ]
+                },
+                "source": {
+                    "rep_source": {
+                        "source_name": "Oracle",
+                        "database_name": "Oracle"
+                    },
+                    "source_tables": {
+                        "name": "Oracle",
+                        "explicit_included_tables": [
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_SO_DET"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_209_SOCP_ARC"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_INV_ITEM_TEMP"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_SPLIT_LINE_DET_OLD"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_SPLIT_LINE_DET_OLD_A"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_INTERCO_OE_HDRS_STGTARGET"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_INTERCO_OE_LINES_STG"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_PLAN_RELEASE_HISTORY"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_SUPPLY"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_RULES_DATA"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_TRANSACTION_ACCOUNT"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_WHI_OUTBOUND"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_WHI_INBOUND"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPF_PRC_BPA_XREF_STG"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_SYSTEM_PARAMETERS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_UPDATE_STG"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_UPDATE_STG_ARCXXSCP"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_INTRANSIT_SUPPLY"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_SALES_ORDER_DEMAND"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_RESERVATIONS"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_SHIP_SO_DEMAND"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_CNCL_DEMAND"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_WO_DEMAND"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_RMA_DEMAND"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_ALLOCATIONS_ARC"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_USER_NEW_ALLOCS"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "CST_ITEM_COSTS"
+                            },
+                            {
+                                "owner": "EGO",
+                                "name": "EGO_MTL_SY_ITEMS_EXT_TL"
+                            },
+                            {
+                                "owner": "EGO",
+                                "name": "EGO_MTL_SY_ITEMS_EXT_B"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_JE_HEADERS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_JE_LINES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_LOT_NUMBERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_MATERIAL_TRANSACTIONS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_RESERVATIONS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_SYSTEM_ITEMS_B"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_BLANKET_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_BLANKET_LINES_ALL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_BLANKET_LINES_EXT"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_HOLD_RELEASES"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_ORDER_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_ORDER_HOLDS_ALL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_ORDER_LINES_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_DISTRIBUTIONS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_LINE_LOCATIONS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_LINES_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_REQ_DISTRIBUTIONS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_REQUISITION_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_REQUISITION_LINES_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_CUST_TRX_LINE_GL_DIST_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_CUSTOMER_TRX_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_CUSTOMER_TRX_LINES_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "RCV_SHIPMENT_HEADERS"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "RCV_SHIPMENT_LINES"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "RCV_TRANSACTIONS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_SD_BATCH_LINE_DTLS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_BIZCST_TRK_HDR_AD"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_DELIVERY_TRACK_DET"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_DELIVERY_TRACKING"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_SPLIT_LINE_DETAILS"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_OE_LINE_ADD_DTLS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_ORD_POSTSHIP_TRK_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_LINES_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_LINES_ALL"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_BIZCST_TRK_DTL_AD"
+                            },
+                            {
+                                "owner": "MAP XXCRM",
+                                "name": "XXCRM_GBL_SO_DET"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_BB_OE_ORDER_LINES_ALL_H"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_ARROW_FIELD_NAME"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_AUDIT_LOG_DETAIL"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_AUDIT_LOG_GROUP"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_AUDIT_LOG_MSTR"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_CONTACT"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_CORRECT_DATA_LINK"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_CORRECT_DATA_USER"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_EMAIL_SUBJECT"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_FIELD_MAP"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_FIELD_MAP_VALUE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_FIELD_NAME"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_FILE_DEF"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_FILE_FIELD_DEF"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_FILE_TAB_DEF"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_PKG_CONTACT_XREF"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_PKG_FILE_XREF"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_PROFILE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_PROFILE_XREF"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_RAW_DATA"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_RAW_DATA_COLUMNS"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_RAW_DATA_ERROR"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_RAW_DATA_HEADER"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_RAW_DATA_VALUES"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_SITE_INFO"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANSRAW_XREF"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANS_DATA"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANS_DATA_COLUMNS"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANS_DATA_ERROR"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANS_DATA_HEADER"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANS_DATA_VALUES"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANS_MAP_ITEM"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_BE_TRANS_PACKAGE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_DATA_MOVEMENT_LOG"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_EMAIL_ERROR"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_EMAIL_INCLUDE_EXCLUDE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_ENTITY_TYPE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_FIELD_TYPE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_FORMAT_TYPE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_GLOBAL_CONFIG"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_INPUT_TYPE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_MQ_INTERIM_DATA"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_MQ_INTERIM_HEADER"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_OUTPUT_TYPE"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_REC_STRUCTURE_CONFIG"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_STATUS"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_SYSTEM_EMAIL_CONFIG"
+                            },
+                            {
+                                "owner": "XXTRX",
+                                "name": "XXTRX_TRANS_FUNCTION_INFO"
+                            },
+                            {
+                                "owner": "AK",
+                                "name": "AK_OBJECT_ATTRIBUTES"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_INVOICES_ALL"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_INVOICE_LINES_ALL"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_SUPPLIERS"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_SUPPLIER_CONTACTS"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_SUPPLIER_SITES_ALL"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_SYSTEM_PARAMETERS_ALL"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_TERMS_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_ADJUSTMENTS_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_AGING_BUCKETS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_AGING_BUCKET_LINES_B"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_AGING_BUCKET_LINES_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_CASH_RECEIPTS_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_CASH_RECEIPT_HISTORY_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_COLLECTORS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_DEFERRAL_REASONS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_MISC_CASH_DISTRIBUTIONS_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_PAYMENT_SCHEDULES_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_RECEIPT_METHODS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_RECEIVABLE_APPLICATIONS_ALL"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_CALENDAR_DATES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_RESOURCES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "CST_COST_TYPES"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENTS_ALL_B"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENTS_ALL_TL"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_LINKS_EXT"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_SEVERITIES_B"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_SEVERITIES_TL"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_STATUSES_B"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_STATUSES_TL"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_TYPES_B"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_TYPES_TL"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_URGENCIES_B"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_URGENCIES_TL"
+                            },
+                            {
+                                "owner": "DPP",
+                                "name": "DPP_TRANSACTION_CLAIMS_ALL"
+                            },
+                            {
+                                "owner": "DPP",
+                                "name": "DPP_TRANSACTION_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "DPP",
+                                "name": "DPP_TRANSACTION_LINES_ALL"
+                            },
+                            {
+                                "owner": "EGO",
+                                "name": "EGO_FND_DF_COL_USGS_EXT"
+                            },
+                            {
+                                "owner": "EGO",
+                                "name": "EGO_FND_DSC_FLX_CTX_EXT"
+                            },
+                            {
+                                "owner": "EGO",
+                                "name": "EGO_VS_VALUES_DISP_ORDER"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "FINANCIALS_SYSTEM_PARAMS_ALL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_APPLICATION"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_APPLICATION_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_CURRENCIES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_DESCR_FLEX_COLUMN_USAGES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_DESCR_FLEX_CONTEXTS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_DESCR_FLEX_CONTEXTS_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_DOCUMENT_SEQUENCES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALUES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALUE_SETS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_ID_FLEX_SEGMENTS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_ID_FLEX_STRUCTURES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_ID_FLEX_STRUCTURES_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_LOOKUP_VALUES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_PROFILE_OPTIONS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_PROFILE_OPTIONS_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_PROFILE_OPTION_VALUES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_RESPONSIBILITY"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_RESPONSIBILITY_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_SECURITY_GROUPS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_TERRITORIES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_TERRITORIES_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_USER"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_ACCESS_SETS"
+                            },
+                            {
+                                "owner": "APPS",
+                                "name": "GL_ACCESS_SET_LEDGERS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_BUDGET_VERSIONS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_CODE_COMBINATIONS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_DAILY_RATES"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_JE_BATCHES"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_JE_SOURCES_TL"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_LEDGERS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_LEDGER_CONFIGURATIONS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_LEDGER_CONFIG_DETAILS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_LEDGER_RELATIONSHIPS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_PERIODS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_PERIOD_STATUSES"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_PERIOD_TYPES"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "HR_ALL_ORGANIZATION_UNITS_TL"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "HR_LOCATIONS_ALL_TL"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "HR_ORGANIZATION_INFORMATION"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CONTACT_POINTS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUSTOMER_PROFILES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUST_ACCOUNTS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUST_ACCOUNT_ROLES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUST_PROFILE_AMTS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUST_PROFILE_CLASSES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUST_SITE_USES_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_ORG_CONTACTS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_PARTIES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_PARTY_SITES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_PARTY_SITE_USES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_PARTY_USG_ASSIGNMENTS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_RELATIONSHIPS"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_NOTES_B"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_OBJECTS_B"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_OBJECTS_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_GROUPS_B"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_GROUPS_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_GROUP_MEMBERS"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_RESOURCE_EXTNS_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_ROLES_B"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_ROLES_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_ROLE_RELATIONS"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_SALESREPS"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TASKS_B"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TASKS_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TASK_ASSIGNMENTS"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TASK_PRIORITIES_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TASK_STATUSES_B"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TASK_STATUSES_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TASK_TYPES_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TERR_ALL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TERR_RSC_ALL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_TERR_TYPES_ALL"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CATEGORIES_B"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CATEGORIES_TL"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CATEGORY_SET_VALID_CATS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CROSS_REFERENCES_B"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CROSS_REFERENCES_TL"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CROSS_REFERENCE_TYPES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CUSTOMER_ITEMS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CUSTOMER_ITEM_XREFS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_CATALOG_GROUPS_B"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_CATEGORIES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_SUB_INVENTORIES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_MANUFACTURERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_PHYSICAL_ADJUSTMENTS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_PHYSICAL_INVENTORIES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_PHYSICAL_INVENTORY_TAGS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_PHYSICAL_SUBINVENTORIES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_RELATED_ITEMS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_SECONDARY_INVENTORIES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_SYSTEM_ITEMS_TL"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_TRANSACTION_TYPES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_TXN_REQUEST_HEADERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_TXN_REQUEST_LINES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_TXN_SOURCE_TYPES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_UNITS_OF_MEASURE_TL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_AK_OBJ_ATTR_EXT"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_AUDIT_ATTR_HISTORY"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_HOLD_DEFINITIONS"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_HOLD_SOURCES_ALL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_ORDER_SOURCES"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_PRICE_ADJUSTMENTS"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_SETS"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_TRANSACTION_TYPES_ALL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_TRANSACTION_TYPES_TL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_AE_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_AE_LINES_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_CLAIMS_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_CLAIM_LINES_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_CLAIM_TYPES_ALL_B"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_CLAIM_TYPES_ALL_TL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_FUNDS_UTILIZED_ALL_B"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_SD_BATCH_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_SD_BATCH_LINES_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_SD_BATCH_LINE_DISPUTES"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_SD_REQUEST_HEADERS_ALL_B"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_SD_REQUEST_LINES_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_SUPP_TRD_PRFLS_ALL"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_ALL_ASSIGNMENTS_F"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_ALL_PEOPLE_F"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_AGENTS"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_DOCUMENT_TYPES_ALL_B"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_GA_ORG_ASSIGNMENTS"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_LINE_LOCATIONS_ARCHIVE_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_LOCATION_ASSOCIATIONS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_RELEASES_ALL"
+                            },
+                            {
+                                "owner": "QP",
+                                "name": "QP_LIST_HEADERS_B"
+                            },
+                            {
+                                "owner": "QP",
+                                "name": "QP_LIST_HEADERS_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_BATCH_SOURCES_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_CUST_TRX_TYPES_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_TERMS_TL"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_PARAMETER"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_PRMTR_SETTING"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_PRM_VRBLE_XRF"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_RLE_STNG_DATA"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_RLE_VRBL_DATA"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_RULES"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_RULE_ROW_ID"
+                            },
+                            {
+                                "owner": "XXUDP",
+                                "name": "UFST_VARIABLE"
+                            },
+                            {
+                                "owner": "XXARW_ADMIN",
+                                "name": "LOGONAUDITTABLE"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_SUPS_DETAILS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_INDEXATION"
+                            },
+                            {
+                                "owner": "WIP",
+                                "name": "WIP_ENTITIES"
+                            },
+                            {
+                                "owner": "WIP",
+                                "name": "WIP_SCHEDULE_GROUPS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_CARRIERS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_CARRIER_SHIP_METHODS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_DELIVERY_ASSIGNMENTS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_DELIVERY_DETAILS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_NEW_DELIVERIES"
+                            },
+                            {
+                                "owner": "XLA",
+                                "name": "XLA_AE_HEADERS"
+                            },
+                            {
+                                "owner": "XLA",
+                                "name": "XLA_AE_LINES"
+                            },
+                            {
+                                "owner": "XLA",
+                                "name": "XLA_EVENTS"
+                            },
+                            {
+                                "owner": "XLE",
+                                "name": "XLE_ENTITY_PROFILES"
+                            },
+                            {
+                                "owner": "XLE",
+                                "name": "XLE_REGISTRATIONS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_APP_NOTES"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_DOC_DELV"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_ROHS_DETAILS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_SEGMENTS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_SUPP_DETAILS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_TEAM_DTLS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_TEAM_MEM_DTLS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DPP_INV_DTLS_ADJ_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_BOARDS_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_DSGN_PRTNRS_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_DSGN_SUPPORT_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_MLSTNES_HTRY_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_PART_VRNTS_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_POS_ADJ_AD_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_POS_LINES_AD_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_PROJECTS_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DW_APFC_TECH_XREF"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DW_SERVICES"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DW_STP_DETAILS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DW_TECHS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DW_TECH_GROUPS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_EVENTS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_RES_SPLIT_ASSIGN"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_TASKS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_GMB_215_SERL_NO"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_PO_EXPEDITE_INFO"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_ASSET_HIST_PERIODS"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_BOM_BTSFSO_TRK"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_OE_AS_ACCESSES"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_PAYMENTS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_SHIPMENTS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SALES_ALERTS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_CUST_DETAILS_ARC"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_HEADERS_ARC"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_LINES_ARC"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_ORG_DETAILS_ARC"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_PRICE_BRKS_ARC"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_STS_CONTACTS_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_STS_CONTACTS_ARC"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_STS_QUEUE_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_STS_QUEUE_ARC"
+                            },
+                            {
+                                "owner": "ZX",
+                                "name": "ZX_PARTY_TAX_PROFILE"
+                            },
+                            {
+                                "owner": "ZX",
+                                "name": "ZX_REGISTRATIONS"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_ORD_FIXED_CHARGES"
+                            },
+                            {
+                                "owner": "ZX",
+                                "name": "ZX_RATES_B"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "HR_ALL_ORGANIZATION_UNITS"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_WORK_ORDER_LINKS"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_RESOURCE_EXTNS"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_CHECKS_ALL"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_INVOICE_PAYMENTS_ALL"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "CST_QUANTITY_LAYERS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_APPS_SYSTEM"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_JE_CATEGORIES_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUST_ACCT_SITES_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_LOCATIONS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CST_ACTUAL_COST_DETAILS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_GRADES_B"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_GRADES_TL"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_INTERORG_PARAMETERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_PARAMETERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_TRANSACTION_REASONS"
+                            },
+                            {
+                                "owner": "QP",
+                                "name": "OE_AGREEMENTS_TL"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_BLANKET_HEADERS_EXT"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_SYS_PARAMETERS_ALL"
+                            },
+                            {
+                                "owner": "OZF",
+                                "name": "OZF_SYS_PARAMETERS_ALL"
+                            },
+                            {
+                                "owner": "QP",
+                                "name": "QP_PRICE_FORMULAS_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_RULES"
+                            },
+                            {
+                                "owner": "WIP",
+                                "name": "WIP_DISCRETE_JOBS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_ACCT_AD"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_AUDIT_AD"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_SITE_USE"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_SD_DEB_ACC_DTLS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_IPV_AUDIT"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPF_ATTR"
+                            },
+                            {
+                                "owner": "ZX",
+                                "name": "ZX_LINES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_CTO_ORDER_LINES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_DEPARTMENT_RESOURCES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_DEPARTMENTS"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_COMPONENTS_B"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_OPERATION_RESOURCES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_OPERATION_SEQUENCES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_OPERATIONAL_ROUTINGS"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_SETUP_TYPES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_STANDARD_OPERATIONS"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "CST_ACTIVITIES"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "HR_LOCATIONS_ALL"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_INTERCOMPANY_PARAMETERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_CATALOG_GROUPS_TL"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_BATCHES"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_ERRORS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_ITEM_ATTR_STG"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_ITEM_STG"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_OPC_TRX_ALL"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_OPC_TRX_DETAILS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_PRC_DTLS_STG"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_DEM_PEND_ACTION"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_ORD_WHS_SERVICES_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_CUST_DETAILS"
+                            },
+                            {
+                                "owner": "MSC",
+                                "name": "MSC_TRADING_PARTNER_SITES"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_SO_CONSUMPTION"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_MSC_SYSTEM_ITEMS_APS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SUPLR_BCKLOG_STG"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_CONS_BILL_CYCLES_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_TERMS_B"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_PERSON_LANGUAGE"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_CARRIER_SERVICES"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_ORG_CARRIER_SERVICES"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_ADDRESSES"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_PHONES"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_CARRIER_ACCT"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_CONTACT"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_TRX_CURRENCY"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_INCIDENT_LINKS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_NOTES_ALL"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_RCV_HDR_INTF_STG"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_RCV_TRX_INTF_STG"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_RTS_MO_HDRS_AD"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_BOM_IRISO_TRK"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_ORG_DETAILS"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_CUST_ACCT_RELATE_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_PARTY_AD"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_BUFFER_SETUP"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_HDRSUM_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_PRICE_BRKS_ALL"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_LE_GROUP"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_OU_GROUP"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_PAY_GROUP"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_PAYMENT_SCHEDULES_ALL"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_PAYMENT_TEMPLATES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_DATABASES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALUES_TL"
+                            },
+                            {
+                                "owner": "CE",
+                                "name": "CE_BANK_ACCOUNTS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_DAILY_CONVERSION_TYPES"
+                            },
+                            {
+                                "owner": "IBY",
+                                "name": "IBY_EXT_BANK_ACCOUNTS"
+                            },
+                            {
+                                "owner": "IBY",
+                                "name": "IBY_EXTERNAL_PAYEES_ALL"
+                            },
+                            {
+                                "owner": "IBY",
+                                "name": "IBY_PAYMENTS_ALL"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPF_PRC_DTLS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPF_PRC_DTLS_STG"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_BUFFER_LINES"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_WHI_SO_LOG"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_POS_OFFSHORE"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_FREIGHT_COSTS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_FREIGHT_COST_TYPES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "WF_NOTIFICATIONS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "WF_MESSAGE_ATTRIBUTES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "WF_MESSAGE_ATTRIBUTES_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALIDATION_RULES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALIDATION_RULE_LINES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VDATION_RULES_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_RECEIPT_CLASSES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_RECEIPT_METHOD_ACCOUNTS_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_RECEIVABLES_TRX_ALL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_TIMEZONES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "CST_COST_GROUPS"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_CP_REVISIONS"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_CUSTOMER_PRODUCTS_ALL_OLD"
+                            },
+                            {
+                                "owner": "CS",
+                                "name": "CS_HZ_SR_CONTACT_POINTS"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_II_RELATIONSHIPS"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_INSTANCE_STATUSES"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_IP_ACCOUNTS"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_ITEM_INSTANCES"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_I_ORG_ASSIGNMENTS"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_I_PARTIES"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_I_PRICING_ATTRIBS"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_SYSTEMS_B"
+                            },
+                            {
+                                "owner": "CSI",
+                                "name": "CSI_SYSTEMS_TL"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ATP_RULES"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_NOTES_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_GROUP_USAGES"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_TEAMS_B"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_TEAMS_TL"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_RS_TEAM_USAGES"
+                            },
+                            {
+                                "owner": "MRP",
+                                "name": "MRP_SR_ASSIGNMENTS"
+                            },
+                            {
+                                "owner": "MRP",
+                                "name": "MRP_SOURCING_RULES"
+                            },
+                            {
+                                "owner": "MRP",
+                                "name": "MRP_SR_RECEIPT_ORG"
+                            },
+                            {
+                                "owner": "MRP",
+                                "name": "MRP_SR_SOURCE_ORG"
+                            },
+                            {
+                                "owner": "WMS",
+                                "name": "WMS_RULES_B"
+                            },
+                            {
+                                "owner": "WMS",
+                                "name": "WMS_RULES_TL"
+                            },
+                            {
+                                "owner": "WMS",
+                                "name": "WMS_CROSSDOCK_CRITERIA_B"
+                            },
+                            {
+                                "owner": "WMS",
+                                "name": "WMS_CROSSDOCK_CRITERIA_TL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_FIXED_CHARGES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_STRUCTURES_B"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_DISTRIBUTIONS_ALL"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPF_PRC_BPA_XREF"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DPP_INV_DTLS_ALL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_ATTACHED_DOCUMENTS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_DOCUMENTS"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_PERSON_TYPES_TL"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_PERSON_TYPES"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_PERIODS_OF_SERVICE"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_PLANNERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CATEGORY_SETS_TL"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "HZ_ORGANIZATION_PROFILES"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_EXPENSE_REPORT_HEADERS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_DOCUMENT_TYPES_ALL_TL"
+                            },
+                            {
+                                "owner": "MSC",
+                                "name": "MSC_FULL_PEGGING"
+                            },
+                            {
+                                "owner": "MSC",
+                                "name": "MSC_DEMANDS"
+                            },
+                            {
+                                "owner": "MSC",
+                                "name": "MSC_TRADING_PARTNERS"
+                            },
+                            {
+                                "owner": "MSC",
+                                "name": "MSC_CALENDAR_DATES"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_ODS_SALES_GROUP"
+                            },
+                            {
+                                "owner": "WMS",
+                                "name": "WMS_LICENSE_PLATE_NUMBERS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_CATEGORY_SETS_B"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_SO_DET_LEGACY"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_INVOICE_DET"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_QUOTA_SPLIT_DETAILS"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_SQR_MASS_UPLOAD"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_EB_DFLT"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_ALLWD_PACKS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_SND_RMA_DETAILS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_REGIONS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_LOCATIONS"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_REGION_LOCATIONS"
+                            },
+                            {
+                                "owner": "FA",
+                                "name": "FA_ADDITIONS_B"
+                            },
+                            {
+                                "owner": "FA",
+                                "name": "FA_ADDITIONS_TL"
+                            },
+                            {
+                                "owner": "FA",
+                                "name": "FA_ASSET_INVOICES"
+                            },
+                            {
+                                "owner": "FA",
+                                "name": "FA_BOOKS"
+                            },
+                            {
+                                "owner": "FA",
+                                "name": "FA_DEPRN_SUMMARY"
+                            },
+                            {
+                                "owner": "FA",
+                                "name": "FA_DISTRIBUTION_HISTORY"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_DEPARTMENT_CLASSES"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_RESOURCE_SHIFTS"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "BOM_STRUCTURE_TYPES_B"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_CONCURRENT_PROGRAMS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_CONCURRENT_PROGRAMS_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALUE_NORM_HIERARCHY"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALUE_RULE_USAGES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALUE_RULES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_FLEX_VALUE_RULES_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_LANGUAGES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_LOOKUP_ASSIGNMENTS"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_LOOKUP_TYPES"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_LOOKUP_TYPES_TL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_LOOKUP_VALUES_IL"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_NEW_MESSAGES"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "HR_ALL_POSITIONS_F"
+                            },
+                            {
+                                "owner": "MRP",
+                                "name": "MRP_ASSIGNMENT_SETS"
+                            },
+                            {
+                                "owner": "MRP",
+                                "name": "MRP_PARAMETERS"
+                            },
+                            {
+                                "owner": "MSC",
+                                "name": "MSC_SOURCING_RULES"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_DEFAULT_CATEGORY_SETS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_LOCATIONS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_TEMPL_ATTRIBUTES"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_ASL_STATUSES"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_CONTROL_FUNCTIONS"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_CONTROL_GROUPS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_CONTROL_RULES"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_HAZARD_CLASSES_TL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_LINE_TYPES_B"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_CMGT_CREDIT_REQUESTS"
+                            },
+                            {
+                                "owner": "JTF",
+                                "name": "JTF_PREFAB_CA_FL_LANGS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_TEMPLATES_B"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_SALES_ORDERS"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_PROCESSING_MSGS"
+                            },
+                            {
+                                "owner": "ONT",
+                                "name": "OE_PROCESSING_MSGS_TL"
+                            },
+                            {
+                                "owner": "HR",
+                                "name": "PER_SECURITY_PROFILES"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_APPROVED_SUPPLIER_LIST"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_ASL_ATTRIBUTES"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_HEADERS_ARCHIVE_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_HEADERS_INTERFACE"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_LINE_TYPES_TL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_LINES_INTERFACE"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_SYSTEM_PARAMETERS_ALL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "PO_UN_NUMBERS_TL"
+                            },
+                            {
+                                "owner": "PO",
+                                "name": "RCV_TRANSACTIONS_INTERFACE"
+                            },
+                            {
+                                "owner": "WIP",
+                                "name": "WIP_LINES"
+                            },
+                            {
+                                "owner": "WSH",
+                                "name": "WSH_PICKING_RULES"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_RMA_VIRTUAL_RECEIPTS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_APC_FTP_PACK_HDR_DAT"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_APC_FTP_PACK_LINE_DAT"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_CUST_IR_SEQ_TBL"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_MDM_ITEM_ARC"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_PCN_EMAIL_HIST"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_PCN_HDR_DTLS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_PCN_LINE_DTLS"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_PO_COMM_METHOD_STG"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPH_CUSTOMER"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPH_REQUEST_NUMBER"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPH_ROOT_CODE_ASSIGN"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPH_ROOT_CODE_MAIN"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SUPLR_BCKLOG_ARC"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_WHI_WO_LOG"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_BUFFER_SETUP_HIST"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_DEL_BUFFER_ARC"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_DEL_LINE_BUFFER_ARC"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_FCSTLINES_STG"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_NONFCST_CUSPRT_AD"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_RELEASE_LINES_AD"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_SO_CONSUMPTION_OLD"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_SO_OPR_INTF"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_ATP_SWAP_STG"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_BOM_BTSFSO_STG"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_OE_PK_RL_LN_VLDT_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_OSP_BOM_IRISO_TRK"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_OVERSHIP_STG"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_TAX_DETAILS"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_TERMS_LINES"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "AR_BATCHES_ALL"
+                            },
+                            {
+                                "owner": "CE",
+                                "name": "CE_BANK_ACCT_USES_ALL"
+                            },
+                            {
+                                "owner": "MSC",
+                                "name": "MSC_SAFETY_STOCKS"
+                            },
+                            {
+                                "owner": "INV",
+                                "name": "MTL_ITEM_REVISIONS_B"
+                            },
+                            {
+                                "owner": "AR",
+                                "name": "RA_TERMS_LINES_DISCOUNTS"
+                            },
+                            {
+                                "owner": "XLE",
+                                "name": "XLE_ETB_PROFILES"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_SITE_GRP_XREF"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUSTOMER_GROUP"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_RTS_MO_LNS_AD"
+                            },
+                            {
+                                "owner": "XXDIS",
+                                "name": "XXDIS_GBL_SPF_ATTR_STG"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_FCST_CONSL_HLD_AD"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_GBL_SUPPLIERFORECAST_AD"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_LEGAL_ENTITIES_BSVS"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_PREPAY_APP_DISTS"
+                            },
+                            {
+                                "owner": "GL",
+                                "name": "GL_ENCUMBRANCE_TYPES"
+                            },
+                            {
+                                "owner": "XLA",
+                                "name": "XLA_EVENT_CLASSES_TL"
+                            },
+                            {
+                                "owner": "XLA",
+                                "name": "XLA_EVENT_TYPES_TL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_ORDER_ACK_QUEUE_ALL"
+                            },
+                            {
+                                "owner": "XXSLS",
+                                "name": "XXSLS_GBL_QTE_PRICE_ADJS_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DW_TRANSFER_NOTIFIC"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_CORE_PART_MATCH"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBC_CUST_MAP_XREF_GG"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DW_5C2C5C4IN_STG_GG"
+                            },
+                            {
+                                "owner": "XXGFN",
+                                "name": "XXGFN_5C2_EBS_LOG_GG"
+                            },
+                            {
+                                "owner": "BOM",
+                                "name": "CST_WRITE_OFFS"
+                            },
+                            {
+                                "owner": "QP",
+                                "name": "QP_PRICING_ATTRIBUTES"
+                            },
+                            {
+                                "owner": "AP",
+                                "name": "AP_INVOICE_DISTRIBUTIONS_ALL"
+                            },
+                            {
+                                "owner": "XLA",
+                                "name": "XLA_DISTRIBUTION_LINKS"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_SITE_AD"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_INV_HIST_AD_ALL"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_DSW_REGSTRATIONS_ALL"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_ATP_FOH_DETAILS"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_MSC_DEMANDS_RPT"
+                            },
+                            {
+                                "owner": "XLA",
+                                "name": "XLA_TRANSACTION_ENTITIES"
+                            },
+                            {
+                                "owner": "QP",
+                                "name": "QP_LIST_LINES"
+                            },
+                            {
+                                "owner": "XXCRM",
+                                "name": "XXCRM_GBL_CUST_DOC_CON"
+                            },
+                            {
+                                "owner": "XXFST",
+                                "name": "XXFST_GBL_SRCH_ITEM_COL2_MST"
+                            },
+                            {
+                                "owner": "XXFST",
+                                "name": "XXFST_GBL_SRCH_ITEM_COL1_MST"
+                            },
+                            {
+                                "owner": "APPLSYS",
+                                "name": "FND_DESCR_FLEX_COL_USAGE_TL"
+                            },
+                            {
+                                "owner": "XXSCP",
+                                "name": "XXSCP_CIP_ALLOCATIONS"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "ITEMS"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "LOCATION"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "MDP_MATRIX"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "SALES_DATA"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "T_EP_CF_STATUS"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "T_EP_EBS_CPN_CODE"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "T_EP_EBS_FCST_REG"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "T_EP_ITEM"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "T_EP_LR2"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "T_EP_ORGANIZATION"
+                            },
+                            {
+                                "owner": "DP",
+                                "name": "T_EP_SITE"
+                            }
+                        ]
+                    }
+                },
+                "targets": [
+                    {
+                        "rep_target": {
+                            "target_name": "Snowflake_AWS",
+                            "target_state": "DISABLED",
+                            "database_name": "Snowflake_AWS"
+                        }
+                    }
+                ],
+                "task_settings": {
+                    "source_settings": {},
+                    "target_settings": {
+                        "queue_settings": {
+                            "message_shape": {},
+                            "key_shape": {}
+                        },
+                        "ftm_settings": {},
+                        "artifacts_cleanup_enabled": false,
+                        "ddl_handling_policy": {}
+                    },
+                    "sorter_settings": {
+                        "local_transactions_storage": {},
+                        "transaction_consistency_timeout": 10
+                    },
+                    "common_settings": {
+                        "support_lobs": false,
+                        "change_table_settings": {
+                            "handle_ddl": false,
+                            "header_columns_settings": {}
+                        },
+                        "audit_table_settings": {},
+                        "dr_settings": {},
+                        "statistics_table_settings": {},
+                        "bidi_table_settings": {},
+                        "task_uuid": "a5cd2f48-ba95-0d4f-a346-3aac675f8373",
+                        "status_table_settings": {},
+                        "suspended_tables_table_settings": {},
+                        "history_table_settings": {},
+                        "exception_table_settings": {},
+                        "recovery_table_settings": {},
+                        "data_batching_settings": {},
+                        "data_batching_table_settings": {},
+                        "log_stream_settings_depricated": {},
+                        "ddl_history_table_settings": {},
+                        "customized_charset_settings": {
+                            "validation": {}
+                        }
+                    }
+                }
+            }
+        ],
+        "databases": [
+            {
+                "name": "Oracle",
+                "role": "SOURCE",
+                "is_licensed": true,
+                "type_id": "ORACLE_COMPONENT_TYPE",
+                "db_settings": {
+                    "$type": "OracleSettings",
+                    "username": "oquilk",
+                    "password": "{ZA0657FCC05BF9F089D95CCF4FEC8E0356699710F11E2A8F29}",
+                    "server": "frgnbora81.groupecat.com:1521/NGPREP",
+                    "useLogminerReader": false,
+                    "asm_server": "(DESCRIPTION =     (ADDRESS = (PROTOCOL = TCP)(HOST = frgnbora81.groupecat.com)(PORT = 1521))     (CONNECT_DATA =       (SERVER = DEDICATED)       (SERVICE_NAME = +ASM)     )   )",
+                    "asm_user": "asmoquilk",
+                    "asm_password": "{ZA464860028C07C940B29D0BF228573460501D53CD34B19FF7}",
+                    "accessAlternateDirectly": false,
+                    "parallelASMReadThreads": 4
+                },
+                "override_properties": {}
+            },
+            {
+                "name": "Snowflake_AWS",
+                "role": "TARGET",
+                "is_licensed": true,
+                "type_id": "SNOWFLAKE_COMPONENT_TYPE",
+                "db_settings": {
+                    "$type": "SnowflakeSettings",
+                    "username": "Tandabany",
+                    "password": "{ZAB1F670CD91684A0615400BC0EDA6E11A1015502C28B5F045}",
+                    "server": "cm89465.west-europe.azure.snowflakecomputing.com",
+                    "database": "NGPREP",
+                    "loadTimeout": 1800,
+                    "replaceChars": "",
+                    "stagingtype": "SNOWFLAKE_STAGE",
+                    "proxyhost": "forcepoint.groupecat.com",
+                    "proxyport": 8081,
+                    "proxyscheme": "HTTP",
+                    "useProxyServer": true,
+                    "oauth": {
+                        "$type": "SnowflakeOAuth"
+                    },
+                    "filesInBatch": 30
+                },
+                "override_properties": {}
+            }
+        ]
+    },
+    "_version": {
+        "version": "2024.5.0.144",
+        "version_major": 2024,
+        "version_minor": 5,
+        "version_revision": 144,
+        "fips": 0
+    },
+    "description": "Host name: FREQXWFTH01.cat.groupecat.com, Time: 2024-07-18 13:32:05.549822"
+}
