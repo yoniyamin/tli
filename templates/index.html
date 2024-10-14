@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSV to JSON Converter</title>
+    <title>Tool Box for QDI - CSV to JSON Converter</title>
     <style>
         /* General Body Styles */
         body {
-            background-color: #f8f9fa; /* Light gray background */
-            color: #333;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333333; /* Dark gray text */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             display: flex;
@@ -31,8 +31,8 @@
 
         /* Header Styling */
         h1 {
-            color: #404040; /* Qlik's dark gray header */
-            font-size: 2rem;
+            color: #333333; /* Dark gray for headers */
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
 
@@ -47,13 +47,13 @@
         label {
             font-size: 1rem;
             margin-bottom: 10px;
-            color: #404040;
+            color: #333333;
         }
 
         /* File Input Styling */
         input[type="file"] {
-            background-color: #ededed;
-            color: #333;
+            background-color: #e0e0e0;
+            color: #333333;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ced4da;
@@ -65,7 +65,7 @@
 
         /* Submit Button Styling */
         input[type="submit"] {
-            background-color: #00b140; /* Qlik green */
+            background-color: #6cc24a; /* Green from the logo */
             color: white;
             padding: 12px 20px;
             border: none;
@@ -78,14 +78,14 @@
         }
 
         input[type="submit"]:hover {
-            background-color: #009933;
+            background-color: #58a13d; /* Darker green on hover */
         }
 
         .checkbox {
             display: flex;
             align-items: center;
             margin: 15px 0;
-            color: #404040;
+            color: #333333;
         }
 
         .checkbox input {
@@ -97,28 +97,29 @@
             margin: 20px 0;
             text-align: left;
             width: 100%;
-            max-width: 450px;
+            max-width: 350px;
         }
 
         .radio-group label {
             font-size: 1rem;
-            margin-right: 10px;
+            margin-right: 20px;
         }
 
+        /* Logo Styling */
         .logo {
-            max-width: 120px;
+            max-width: 150px;
             margin-bottom: 20px;
         }
 
         /* Footer Styling */
         footer {
             margin-top: 20px;
-            color: #404040;
+            color: #333333;
             font-size: 0.9rem;
         }
 
         footer a {
-            color: #00b140; /* Green for link */
+            color: #6cc24a; /* Green for link */
             text-decoration: none;
         }
 
@@ -132,19 +133,18 @@
 
     <!-- Main Container -->
     <div class="container">
-        <!-- Qlik Logo -->
-        <img src="{{ url_for('static', filename='qlik_logo.png') }}" alt="Qlik Logo" class="logo">
+        <!-- Custom Logo -->
+        <img src="{{ url_for('static', filename='new_design1.jpg') }}" alt="Tool Box for QDI Logo" class="logo">
 
         <!-- Main Header -->
-        <h1>Table list loader For Qlik Replicate</h1>
-        <body><P>The Application is designed to help loading a table list into a Replicate task.</P></body>
+        <h1>CSV to JSON Converter</h1>
 
         <!-- Form for CSV and Optional JSON Upload -->
         <form action="/convert" method="POST" enctype="multipart/form-data">
             <label for="csv_file">CSV File:</label>
             <input type="file" name="csv_file" required>
 
-            <label for="json_input_file">Optional task definition JSON:</label>
+            <label for="json_input_file">Optional JSON Input File:</label>
             <input type="file" name="json_input_file">
 
             <!-- Checkbox to Skip Headers -->
@@ -154,15 +154,13 @@
             </div>
 
             <!-- Radio Buttons for Merge or Replace -->
-            <body>When a task definition is loaded, choose how to handle the existing table list</body>
             <div class="radio-group">
-                <label><input type="radio" name="action" value="replace" checked> Replace existing tables</label>
-                <label><input type="radio" name="action" value="merge"> Merge with existing tables</label>
-
+                <label><input type="radio" name="action" value="merge" checked> Merge with existing tables</label>
+                <label><input type="radio" name="action" value="replace"> Replace existing tables</label>
             </div>
 
             <!-- Submit Button -->
-            <input type="submit" value="Generate">
+            <input type="submit" value="Convert">
         </form>
     </div>
 
